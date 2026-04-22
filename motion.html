@@ -1,0 +1,353 @@
+<!-- =========================
+     index.html (FULL FILE)
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Connor Myers — Visual Designer (UI/UX Focus)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16x16.png">
+<link rel="icon" type="image/png" href="assets/brand/favicon.ico">
+
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="assets/brand/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/brand/android-chrome-512x512.png">
+
+<meta name="theme-color" content="#FBFAF7">
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <div class="nav-float w-100">
+
+      <!-- LEFT -->
+      <div class="nav-left">
+        <a class="navbar-brand brand-wordmark" href="index.html" aria-label="Connor Myers">
+          <span class="brand-first">Connor</span>
+          <span class="brand-last"> Myers</span>
+        </a>
+
+        <button id="themeToggle" class="theme-switch ms-2" type="button" aria-label="Toggle theme">
+          <span class="theme-switch__knob" aria-hidden="true">
+            <span class="theme-switch__icon" aria-hidden="true"></span>
+          </span>
+        </button>
+      </div>
+
+      <!-- COLLAPSE PANEL (mobile + desktop links) -->
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Work
+            </a>
+            <ul class="dropdown-menu glass">
+              <li><a class="dropdown-item" href="case-pipshots.html">UX / UI — Pipshots</a></li>
+              <li><a class="dropdown-item" href="motion.html">Motion — Formative</a></li>
+              <li><a class="dropdown-item" href="case-zagg-iphone17.html">Campaign — ZAGG</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+         
+
+          <!-- Mobile CTA (ONLY mobile) -->
+          <li class="nav-item d-lg-none mt-2">
+            <a href="contact.html" class="btn btn-primary w-100 nav-cta-mobile">
+              Get in touch
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="nav-right">
+        <!-- Desktop CTA (ONLY desktop) -->
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta d-none d-lg-inline-flex">
+          Get in touch
+        </a>
+
+        <!-- Hamburger -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- HERO -->
+<header class="py-5 motion-hero">
+  <div class="container">
+    <p class="text-uppercase small text-muted mb-2">Motion / Explainer Animation</p>
+
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-8">
+        <h1 class="display-5 fw-semibold mb-3">Formative Content — Motion </h1>
+
+        <p class="lead text-muted mb-4">
+          Two B2B explainer animations created at Formative Content to make complex processes easy to understand —
+          built with illustration-led storytelling for awareness campaigns.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <span class="chip">Illustrator → After Effects</span>
+          <span class="chip">Explainers</span>
+          <span class="chip">B2B agency work</span>
+          <span class="chip">Clarity + hierarchy</span>
+        </div>
+
+        <div class="motion-meta">
+          <div class="motion-meta__item">
+            <div class="motion-meta__label">Role</div>
+            <div class="motion-meta__value">Illustration + Animation</div>
+          </div>
+          <div class="motion-meta__item">
+            <div class="motion-meta__label">Agency</div>
+            <div class="motion-meta__value">Formative Content</div>
+          </div>
+          <div class="motion-meta__item">
+            <div class="motion-meta__label">Tools</div>
+            <div class="motion-meta__value">Illustrator, After Effects</div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          <a class="btn btn-primary" href="#projects">View work</a>
+         
+          <a class="btn btn-outline-primary" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <aside class="motion-side">
+          <div class="motion-side__title">Project summary</div>
+          <div class="motion-side__list">
+            <div class="motion-side__row">
+              <span class="motion-side__k">Microsoft</span>
+              <span class="motion-side__v">Security system explainer</span>
+            </div>
+            <div class="motion-side__row">
+              <span class="motion-side__k">Mitsubishi</span>
+              <span class="motion-side__v">Automated car building</span>
+            </div>
+          </div>
+
+          <div class="about-divider"></div>
+
+          <div class="small text-muted">
+            Both pieces were designed to explain complicated processes quickly, using clean illustration and confident motion.
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PROJECTS -->
+<section class="py-5" id="projects">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-3">
+      <h2 class="h4 mb-0">Selected animations</h2>
+      <p class="text-muted mb-0">Illustrated in Illustrator, animated in After Effects.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Microsoft -->
+      <div class="col-lg-6">
+        <article class="motion-project">
+          <div class="motion-project__head">
+            <p class="text-uppercase small text-muted mb-2">Microsoft</p>
+            <h3 class="h5 mb-2">Security system explainer</h3>
+            <p class="text-muted mb-0">
+              A motion explainer built to make a complicated security process feel simple and trustworthy.
+            </p>
+          </div>
+
+          <div class="motion-project__media">
+            <div class="motion-frame">
+              <video class="motion-project__video" controls preload="metadata" playsinline>
+                <source src="assets/video/formative/microsoft_animation.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="motion-project__notes">
+            <div class="motion-note">
+              <div class="motion-note__title">Goal</div>
+              <div class="text-muted">Spread awareness and improve understanding of the new security system.</div>
+            </div>
+            <div class="motion-note">
+              <div class="motion-note__title">Approach</div>
+              <div class="text-muted">Clear sequencing, strong hierarchy, and simple visual metaphors.</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Mitsubishi -->
+      <div class="col-lg-6">
+        <article class="motion-project">
+          <div class="motion-project__head">
+            <p class="text-uppercase small text-muted mb-2">Mitsubishi</p>
+            <h3 class="h5 mb-2">Automated car building</h3>
+            <p class="text-muted mb-0">
+              A process animation showcasing a modern automated manufacturing workflow in a shareable way.
+            </p>
+          </div>
+
+          <div class="motion-project__media">
+            <div class="motion-frame">
+              <video class="motion-project__video" controls preload="metadata" playsinline>
+                <source src="assets/video/formative/mitsubishi_animation.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="motion-project__notes">
+            <div class="motion-note">
+              <div class="motion-note__title">Goal</div>
+              <div class="text-muted">Showcase innovation and make the process easy to follow.</div>
+            </div>
+            <div class="motion-note">
+              <div class="motion-note__title">Approach</div>
+              <div class="text-muted">Clean scenes, smooth transitions, and lightweight callouts for key steps.</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="d-flex flex-wrap gap-2 mt-4">
+      <a class="btn btn-primary" href="contact.html">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS (compact + denser) -->
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-3">
+      <h2 class="h4 mb-0">How it was built</h2>
+      <p class="text-muted mb-0">A clarity-first workflow from system → storyboard → motion.</p>
+    </div>
+
+    <div class="motion-process">
+      <div class="motion-process__item">
+        <div class="motion-process__icon"><i class="bi bi-diagram-3"></i></div>
+        <div>
+          <div class="motion-process__title">Define the story</div>
+          <div class="motion-process__text text-muted">Reduce the process to the steps that matter most.</div>
+        </div>
+      </div>
+
+      <div class="motion-process__item">
+        <div class="motion-process__icon"><i class="bi bi-vector-pen"></i></div>
+        <div>
+          <div class="motion-process__title">Illustrate the system</div>
+          <div class="motion-process__text text-muted">Reusable components, icons and layouts in Illustrator.</div>
+        </div>
+      </div>
+
+      <div class="motion-process__item">
+        <div class="motion-process__icon"><i class="bi bi-film"></i></div>
+        <div>
+          <div class="motion-process__title">Animate for readability</div>
+          <div class="motion-process__text text-muted">Timing + easing that lands key info first.</div>
+        </div>
+      </div>
+
+      <div class="motion-process__item">
+        <div class="motion-process__icon"><i class="bi bi-badge-hd"></i></div>
+        <div>
+          <div class="motion-process__title">Export for campaigns</div>
+          <div class="motion-process__text text-muted">Web-friendly formats for landing pages and awareness placements.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="footer-brand mb-2">Connor Myers</div>
+          <p class="text-muted mb-3">
+            UX-led websites, campaigns and motion designed to communicate clearly and convert confidently.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in touch</a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="footer-title">Work</div>
+              <ul class="footer-list">
+                <li><a href="case-zagg-iphone17.html">ZAGG Campaign</a></li>
+                <li><a href="case-pipshots.html">Pipshots Website</a></li>
+                <li><a href="motion.html">Motion</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-title">About</div>
+              <ul class="footer-list">
+                <li><a href="about.html">About me</a></li>
+                <li><a href="assets/docs/Connor_Myers_CV.pdf" target="_blank" rel="noopener">Download CV</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-title">Contact</div>
+              <ul class="footer-list">
+                <li><a href="contact.html">Contact page</a></li>
+                <li><a href="mailto:connrmyers@gmail.com">connrmyers@gmail.com</a></li>
+                <li><a href="tel:+353894838653">+353 89 483 8653</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4 pt-3 d-flex justify-content-between flex-wrap gap-2">
+        <span class="small text-muted">© <span id="footerYear"></span> Connor Myers</span>
+        <span class="small text-muted">Freelance enquiries welcome</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

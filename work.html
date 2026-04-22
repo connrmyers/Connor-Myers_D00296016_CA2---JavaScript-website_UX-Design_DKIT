@@ -1,0 +1,66 @@
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <div class="nav-float w-100">
+
+      <!-- LEFT -->
+      <div class="nav-left">
+        <a class="navbar-brand brand-wordmark" href="index.html" aria-label="Connor Myers">
+          <span class="brand-first">Connor</span>
+          <span class="brand-last"> Myers</span>
+        </a>
+
+        <button id="themeToggle" class="theme-switch ms-2" type="button" aria-label="Toggle theme">
+          <span class="theme-switch__knob" aria-hidden="true">
+            <span class="theme-switch__icon" aria-hidden="true"></span>
+          </span>
+        </button>
+      </div>
+
+      <!-- COLLAPSE PANEL (mobile + desktop links) -->
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Work
+            </a>
+            <ul class="dropdown-menu glass">
+              <li><a class="dropdown-item" href="case-pipshots.html">UX / UI — Pipshots</a></li>
+              <li><a class="dropdown-item" href="motion.html">Motion — Formative</a></li>
+              <li><a class="dropdown-item" href="case-zagg-iphone17.html">Campaign — ZAGG</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+         
+
+          <!-- Mobile CTA (ONLY mobile) -->
+          <li class="nav-item d-lg-none mt-2">
+            <a href="contact.html" class="btn btn-primary w-100 nav-cta-mobile">
+              Get in touch
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="nav-right">
+        <!-- Desktop CTA (ONLY desktop) -->
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta d-none d-lg-inline-flex">
+          Get in touch
+        </a>
+
+        <!-- Hamburger -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Pipshots — Website Build | Connor Myers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16x16.png">
+<link rel="icon" type="image/png" href="assets/brand/favicon.ico">
+
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="assets/brand/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/brand/android-chrome-512x512.png">
+
+<meta name="theme-color" content="#FBFAF7">
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <div class="nav-float w-100">
+
+      <!-- LEFT -->
+      <div class="nav-left">
+        <a class="navbar-brand brand-wordmark" href="index.html" aria-label="Connor Myers">
+          <span class="brand-first">Connor</span>
+          <span class="brand-last"> Myers</span>
+        </a>
+
+        <button id="themeToggle" class="theme-switch ms-2" type="button" aria-label="Toggle theme">
+          <span class="theme-switch__knob" aria-hidden="true">
+            <span class="theme-switch__icon" aria-hidden="true"></span>
+          </span>
+        </button>
+      </div>
+
+      <!-- COLLAPSE PANEL (mobile + desktop links) -->
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Work
+            </a>
+            <ul class="dropdown-menu glass">
+              <li><a class="dropdown-item" href="case-pipshots.html">UX / UI — Pipshots</a></li>
+              <li><a class="dropdown-item" href="motion.html">Motion — Formative</a></li>
+              <li><a class="dropdown-item" href="case-zagg-iphone17.html">Campaign — ZAGG</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+         
+
+          <!-- Mobile CTA (ONLY mobile) -->
+          <li class="nav-item d-lg-none mt-2">
+            <a href="contact.html" class="btn btn-primary w-100 nav-cta-mobile">
+              Get in touch
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="nav-right">
+        <!-- Desktop CTA (ONLY desktop) -->
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta d-none d-lg-inline-flex">
+          Get in touch
+        </a>
+
+        <!-- Hamburger -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- HERO -->
+  <header class="py-5">
+    <div class="container">
+      <p class="text-uppercase small text-muted mb-2">UX Web Design</p>
+
+      <div class="row g-4 align-items-start">
+        <!-- Left copy -->
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-semibold mb-3">Pipshots — Website Build</h1>
+
+          <p class="lead text-muted mb-4">
+            A conversion-focused portfolio website designed and built to increase client enquiries and simplify the booking journey for a local photographer.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="chip">Responsive</span>
+            <span class="chip">Performance</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">Ease of contact</span>
+            <span class="chip">Branding</span>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="https://pipshots.com" target="_blank" rel="noopener">
+              Visit website <i class="bi bi-box-arrow-up-right ms-1"></i>
+            </a>
+           
+            <a class="btn btn-outline-primary" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- Right media -->
+        <div class="col-lg-6">
+          <div class="case-media">
+            <video
+              class="case-media__video js-theme-video"
+              autoplay muted loop playsinline
+              preload="metadata"
+              poster="assets/img/pipshots/case-study_pipshots-laptop.png"
+              data-src-dark="assets/video/pipshots-preview-dark.mp4"
+              data-src-light="assets/video/pipshots-preview-light.mp4"
+            >
+              <!-- JS will set src via data attributes -->
+            </video>
+          </div>
+
+          <p class="small text-muted mt-2 mb-0">
+            Preview: homepage → portfolio → contact
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BIG HERO IMAGE (flat, no card) -->
+  <section class="py-4">
+    <div class="container">
+      <div class="case-hero-flat">
+        <img
+          src="assets/img/pipshots/pipshots-hero.png"
+          alt="Pipshots website shown across desktop, laptop, tablet and mobile"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- BRIEF -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4">
+          <h2 class="h4 mb-3">The brief</h2>
+          <p class="text-muted mb-0">
+          
+
+The project focused on reducing friction through fast load times, clear navigation, and prominent contact pathways, resulting in more consistent and higher-quality enquiries.
+
+Designed and built from scratch using HTML, CSS and JavaScript to maximise performance, accessibility and UX control.
+The client reported an increase in direct enquiries and improved booking clarity following launch.
+          </p>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="case-card">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="case-list">
+                  <div class="case-list__title">Key requirements</div>
+                  <ul class="mb-0">
+                    <li>Responsive across devices</li>
+                    <li>Quick load time and lightweight pages</li>
+                    <li>Simple navigation + clear portfolio browsing</li>
+                    <li>Obvious contact options for enquiries</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="case-list">
+                  <div class="case-list__title">Brand direction</div>
+                  <ul class="mb-0">
+                    <li>Bold “witchy tattoo” personality — cinematic feel</li>
+                    <li>Dark leaning palette, warm highlights</li>
+                    <li>Expressive but readable typography</li>
+                    <li>Photography stays the hero</li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div><!-- /case-card -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex flex-wrap gap-2 mt-4">
+        <a class="btn btn-primary" href="https://pipshots.com" target="_blank" rel="noopener">
+          Visit website <i class="bi bi-box-arrow-up-right ms-1"></i>
+        </a>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="footer-brand mb-2">Connor Myers</div>
+          <p class="text-muted mb-3">
+            UX-led websites, campaigns and motion designed to communicate clearly and convert confidently.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in touch</a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="footer-title">Work</div>
+              <ul class="footer-list">
+                <li><a href="case-zagg-iphone17.html">ZAGG Campaign</a></li>
+                <li><a href="case-pipshots.html">Pipshots Website</a></li>
+                <li><a href="motion.html">Motion</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-title">About</div>
+              <ul class="footer-list">
+                <li><a href="about.html">About me</a></li>
+                <li><a href="assets/docs/Connor_Myers_CV.pdf" target="_blank" rel="noopener">Download CV</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-title">Contact</div>
+              <ul class="footer-list">
+                <li><a href="contact.html">Contact page</a></li>
+                <li><a href="mailto:connrmyers@gmail.com">connrmyers@gmail.com</a></li>
+                <li><a href="tel:+353894838653">+353 89 483 8653</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4 pt-3 d-flex justify-content-between flex-wrap gap-2">
+        <span class="small text-muted">© <span id="footerYear"></span> Connor Myers</span>
+        <span class="small text-muted">Freelance enquiries welcome</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

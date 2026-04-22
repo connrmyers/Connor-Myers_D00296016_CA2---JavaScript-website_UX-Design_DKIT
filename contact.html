@@ -1,0 +1,329 @@
+<!-- =========================
+     contact.html (FULL FILE)
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Get in touch | Connor Myers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16x16.png">
+<link rel="icon" type="image/png" href="assets/brand/favicon.ico">
+
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="assets/brand/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/brand/android-chrome-512x512.png">
+
+<meta name="theme-color" content="#FBFAF7">
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+ <!-- NAV -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <div class="nav-float w-100">
+
+      <!-- LEFT -->
+      <div class="nav-left">
+        <a class="navbar-brand brand-wordmark" href="index.html" aria-label="Connor Myers">
+          <span class="brand-first">Connor</span>
+          <span class="brand-last"> Myers</span>
+        </a>
+
+        <button id="themeToggle" class="theme-switch ms-2" type="button" aria-label="Toggle theme">
+          <span class="theme-switch__knob" aria-hidden="true">
+            <span class="theme-switch__icon" aria-hidden="true"></span>
+          </span>
+        </button>
+      </div>
+
+      <!-- COLLAPSE PANEL (mobile + desktop links) -->
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Work
+            </a>
+            <ul class="dropdown-menu glass">
+              <li><a class="dropdown-item" href="case-pipshots.html">UX / UI — Pipshots</a></li>
+              <li><a class="dropdown-item" href="motion.html">Motion — Formative</a></li>
+              <li><a class="dropdown-item" href="case-zagg-iphone17.html">Campaign — ZAGG</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+         
+
+          <!-- Mobile CTA (ONLY mobile) -->
+          <li class="nav-item d-lg-none mt-2">
+            <a href="contact.html" class="btn btn-primary w-100 nav-cta-mobile">
+              Get in touch
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="nav-right">
+        <!-- Desktop CTA (ONLY desktop) -->
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta d-none d-lg-inline-flex">
+          Get in touch
+        </a>
+
+        <!-- Hamburger -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- HERO -->
+  <header class="py-5 contact-hero">
+    <div class="container">
+      <p class="text-uppercase small text-muted mb-2">Get in touch</p>
+
+      <div class="row g-4 align-items-start">
+        <!-- Left -->
+        <div class="col-lg-5">
+          <h1 class="display-5 fw-semibold mb-3">Let’s build something clear and high-performing.</h1>
+
+          <p class="lead text-muted mb-4">
+            If you’re looking for UX-led landing pages, campaign design, or motion that explains complex ideas —
+            I’m happy to chat.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="chip">UX / UI</span>
+            <span class="chip">Landing pages</span>
+            <span class="chip">Campaign systems</span>
+            <span class="chip">Motion explainers</span>
+            <span class="chip">Performance-aware</span>
+          </div>
+
+          <div class="contact-info">
+            <a class="contact-info__row" href="mailto:connrmyers@gmail.com">
+              <span class="contact-info__icon"><i class="bi bi-envelope"></i></span>
+              <span>
+                <span class="contact-info__label">Email</span><br>
+                <span class="contact-info__value">connrmyers@gmail.com</span>
+              </span>
+            </a>
+
+            <a class="contact-info__row" href="tel:+353894838653">
+              <span class="contact-info__icon"><i class="bi bi-telephone"></i></span>
+              <span>
+                <span class="contact-info__label">Phone</span><br>
+                <span class="contact-info__value">+353 89 483 8653</span>
+              </span>
+            </a>
+
+            <div class="contact-info__row">
+              <span class="contact-info__icon"><i class="bi bi-geo-alt"></i></span>
+              <span>
+                <span class="contact-info__label">Location</span><br>
+                <span class="contact-info__value">Shannon, Co. Clare (Ireland) — remote friendly</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-mini mt-4">
+            <div class="contact-mini__title">Good to know</div>
+            <ul class="mb-0 text-muted">
+              <li>Typical reply time: <strong>within 24–48 hours</strong></li>
+              <li>Freelance enquiries welcome</li>
+              <li>Open to roles across Ireland + remote</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="col-lg-7">
+          <div class="contact-card">
+            <div class="contact-card__top">
+              <div>
+                <div class="contact-card__eyebrow">Message</div>
+                <h2 class="h5 mb-0">Send a quick note</h2>
+              </div>
+              
+            </div>
+
+<form class="contact-form" action="https://formspree.io/f/mqedanql" method="POST">
+  <!-- Optional: nicer email subject -->
+  <input type="hidden" name="_subject" value="New portfolio enquiry">
+
+  <!-- Prevent spam bots -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Redirect after submit -->
+  <input type="hidden" name="_next" value="thanks.html">
+
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label contact-label" for="name">Name</label>
+      <input class="form-control contact-input" id="name" name="name" type="text" autocomplete="name" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label contact-label" for="email">Email</label>
+      <input class="form-control contact-input" id="email" name="email" type="email" autocomplete="email" required>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label contact-label" for="subject">What are you working on?</label>
+      <input class="form-control contact-input" id="subject" name="subject" type="text"
+             placeholder="Landing page, campaign, motion explainer…" required>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label contact-label" for="message">Message</label>
+      <textarea class="form-control contact-input" id="message" name="message" rows="6"
+                placeholder="A few details is perfect: goals, timeline, what you need help with." required></textarea>
+    </div>
+
+    <div class="col-12 d-flex flex-wrap gap-2 align-items-center">
+      <button type="submit" class="btn btn-primary">
+        Send message <i class="bi bi-send ms-1"></i>
+      </button>
+      <a class="btn btn-outline-primary" href="mailto:connrmyers@gmail.com">
+        Email instead
+      </a>
+      <span class="small text-muted ms-md-auto">
+        By sending, you agree to be contacted back at your email address.
+      </span>
+    </div>
+  </div>
+</form>
+
+
+          </div>
+
+          <div class="contact-services mt-4">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="contact-service">
+                  <div class="contact-service__icon"><i class="bi bi-window"></i></div>
+                  <div>
+                    <div class="contact-service__title">Landing pages & UX</div>
+                    <div class="text-muted">Structure, hierarchy and conversion-focused layouts.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="contact-service">
+                  <div class="contact-service__icon"><i class="bi bi-megaphone"></i></div>
+                  <div>
+                    <div class="contact-service__title">Campaign design</div>
+                    <div class="text-muted">Systems that stay consistent across formats.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="contact-service">
+                  <div class="contact-service__icon"><i class="bi bi-film"></i></div>
+                  <div>
+                    <div class="contact-service__title">Motion explainers</div>
+                    <div class="text-muted">Illustration-led animation for clarity and awareness.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="contact-service">
+                  <div class="contact-service__icon"><i class="bi bi-grid-3x3-gap"></i></div>
+                  <div>
+                    <div class="contact-service__title">Design systems</div>
+                    <div class="text-muted">Reusable components and templates for scale.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /services -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FOOTER (same as your index) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="footer-brand mb-2">Connor Myers</div>
+          <p class="text-muted mb-3">
+            UX-led websites, campaigns and motion designed to communicate clearly and convert confidently.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in touch</a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="footer-title">Work</div>
+              <ul class="footer-list">
+                <li><a href="case-zagg-iphone17.html">ZAGG Campaign</a></li>
+                <li><a href="case-pipshots.html">Pipshots Website</a></li>
+                <li><a href="motion.html">Motion</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-title">About</div>
+              <ul class="footer-list">
+                <li><a href="about.html">About me</a></li>
+                <li><a href="assets/docs/Connor_Myers_CV.pdf" target="_blank" rel="noopener">Download CV</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-title">Contact</div>
+              <ul class="footer-list">
+                <li><a href="contact.html">Contact page</a></li>
+                <li><a href="mailto:connrmyers@gmail.com">connrmyers@gmail.com</a></li>
+                <li><a href="tel:+353894838653">+353 89 483 8653</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4 pt-3 d-flex justify-content-between flex-wrap gap-2">
+        <span class="small text-muted">© <span id="footerYear"></span> Connor Myers</span>
+        <span class="small text-muted">Freelance enquiries welcome</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
