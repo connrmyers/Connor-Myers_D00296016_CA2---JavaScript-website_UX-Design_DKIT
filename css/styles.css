@@ -1449,6 +1449,91 @@ header, section{
   border-color: color-mix(in oklab, var(--accent) 55%, var(--border)) !important;
 }
 
+.contact-botcheck{
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.contact-form__status{
+  min-height: 3.25rem;
+  margin: 0;
+  padding: .85rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background: color-mix(in oklab, var(--surface) 65%, transparent);
+  color: var(--muted);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity .2s ease, transform .2s ease, border-color .2s ease, background .2s ease, color .2s ease;
+  pointer-events: none;
+}
+
+.contact-form__status.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-form__status[data-state="loading"]{
+  border-color: color-mix(in oklab, var(--accent) 28%, var(--border));
+  color: var(--text);
+}
+
+.contact-form__status[data-state="success"]{
+  border-color: color-mix(in oklab, #5fcf8f 42%, var(--border));
+  background: color-mix(in oklab, #5fcf8f 14%, var(--surface));
+  color: var(--text);
+}
+
+.contact-form__status[data-state="error"]{
+  border-color: color-mix(in oklab, #ff7d7d 42%, var(--border));
+  background: color-mix(in oklab, #ff7d7d 12%, var(--surface));
+  color: var(--text);
+}
+
+.contact-submit-btn{
+  position: relative;
+}
+
+.contact-submit-btn[disabled]{
+  opacity: .8;
+  cursor: wait;
+}
+
+.contact-submit-btn__spinner{
+  inline-size: 1rem;
+  block-size: 1rem;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: .6rem;
+  opacity: 0;
+  transform: scale(.85);
+  transition: opacity .2s ease, transform .2s ease;
+  animation: contact-submit-spin .8s linear infinite;
+}
+
+.contact-submit-btn.is-loading .contact-submit-btn__spinner{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contact-submit-btn.is-loading .bi-send{
+  opacity: 0;
+}
+
+@keyframes contact-submit-spin{
+  to { transform: rotate(360deg); }
+}
+
 /* Services grid */
 .contact-service{
   border: 1px solid var(--border);

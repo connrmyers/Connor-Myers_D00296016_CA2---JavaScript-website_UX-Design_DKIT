@@ -127,6 +127,80 @@ if (savedTheme === "light") {
     });
   })();
 
+  /* -------------------------
+     CONTACT FORM: WEB3FORMS
+  ------------------------- */
+  (() => {
+    const form = document.getElementById("contactForm");
+    if (!form) return;
+
+    const submitButton = form.querySelector(".contact-submit-btn");
+    const submitLabel = form.querySelector(".contact-submit-btn__label");
+    const status = document.getElementById("contactFormStatus");
+    const defaultButtonLabel = submitLabel ? submitLabel.textContent : "Send message";
+
+    const setStatus = (message, state) => {
+      if (!status) return;
+
+      status.textContent = message;
+      status.dataset.state = state;
+      status.classList.toggle("is-visible", Boolean(message));
+    };
+
+    const setSubmitting = (isSubmitting) => {
+      if (!submitButton) return;
+
+      submitButton.disabled = isSubmitting;
+      submitButton.classList.toggle("is-loading", isSubmitting);
+
+      if (submitLabel) {
+        submitLabel.textContent = isSubmitting ? "Sending..." : defaultButtonLabel;
+      }
+    };
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        setStatus("Please complete the required fields before sending your message.", "error");
+        return;
+      }
+
+      const formData = new FormData(form);
+      setSubmitting(true);
+      setStatus("Sending your message...", "loading");
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || "Something went wrong while sending your message.");
+        }
+
+        form.reset();
+        setStatus("Thanks, your message has been sent successfully. I’ll be in touch soon.", "success");
+      } catch (error) {
+        setStatus(
+          error instanceof Error && error.message
+            ? error.message
+            : "Sorry, your message could not be sent. Please try again.",
+          "error"
+        );
+      } finally {
+        setSubmitting(false);
+      }
+    });
+  })();
+
     /* -------------------------
      HOMEPAGE SCROLLYTELLING
   ------------------------- */

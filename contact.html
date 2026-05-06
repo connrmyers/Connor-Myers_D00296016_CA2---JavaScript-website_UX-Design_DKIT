@@ -174,15 +174,10 @@
               
             </div>
 
-<form class="contact-form" action="https://formspree.io/f/mqedanql" method="POST">
-  <!-- Optional: nicer email subject -->
-  <input type="hidden" name="_subject" value="New portfolio enquiry">
-
-  <!-- Prevent spam bots -->
-  <input type="text" name="_gotcha" style="display:none">
-
-  <!-- Redirect after submit -->
-  <input type="hidden" name="_next" value="thanks.html">
+<form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="2bc78117-aec8-43be-8b6a-59116fe7c1d1">
+  <input type="hidden" name="subject" value="New portfolio enquiry from Connor Myers website">
+  <input type="checkbox" name="botcheck" class="contact-botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
 
   <div class="row g-3">
     <div class="col-md-6">
@@ -197,7 +192,7 @@
 
     <div class="col-12">
       <label class="form-label contact-label" for="subject">What are you working on?</label>
-      <input class="form-control contact-input" id="subject" name="subject" type="text"
+      <input class="form-control contact-input" id="subject" name="project_brief" type="text"
              placeholder="Landing page, campaign, motion explainer…" required>
     </div>
 
@@ -207,9 +202,21 @@
                 placeholder="A few details is perfect: goals, timeline, what you need help with." required></textarea>
     </div>
 
+    <div class="col-12">
+      <p
+        class="contact-form__status"
+        id="contactFormStatus"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+    </div>
+
     <div class="col-12 d-flex flex-wrap gap-2 align-items-center">
-      <button type="submit" class="btn btn-primary">
-        Send message <i class="bi bi-send ms-1"></i>
+      <button type="submit" class="btn btn-primary contact-submit-btn">
+        <span class="contact-submit-btn__label">Send message</span>
+        <span class="contact-submit-btn__spinner" aria-hidden="true"></span>
+        <i class="bi bi-send ms-1" aria-hidden="true"></i>
       </button>
       <a class="btn btn-outline-primary" href="mailto:connrmyers@gmail.com">
         Email instead
